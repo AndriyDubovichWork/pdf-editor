@@ -1,9 +1,9 @@
 import React from 'react';
 import style from './PDF.module.scss';
-import { degrees, PDFDocument, rgb, StandardFonts } from 'pdf-lib';
+import { createPDf } from './../../Functions/PDF-CRUD';
 
 const PDF = () => {
-  return <div>PDF</div>;
+  return <div onClick={() => createPDf()}>PDF</div>;
 };
 
 export default PDF;
